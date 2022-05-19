@@ -1,0 +1,16 @@
+.container {
+  background-color: #2d3a4b;
+
+  :global {
+    .ant-input {
+      background: transparent;
+      color: #fff;
+    }
+
+    .ant-input-affix-wrapper {
+      height: 48px;
+      background: rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+}

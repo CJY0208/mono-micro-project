@@ -1,0 +1,31 @@
+{
+  "name": "root",
+  "engines": {
+    "node": ">=12.17.0"
+  },
+  "private": true,
+  "scripts": {
+    "init": "npx pnpm i --filter=!./legacies && npx pnpm run --filter=./legacies --parallel init",
+    "clean": "rimraf ./**/node_modules",
+    "kill-dev": "kill-port --port 8080,8081,8082,8083,8084",
+    "dev": "npm run kill-dev && npx pnpm run --filter=!root --parallel dev",
+    "dev:no-legacy": "npx pnpm run --filter=!root --filter=!@legacies/* --parallel dev",
+    "patch": "npx pnpm run --filter=!root --parallel patch",
+    "build": "npx pnpm run --filter=!root --parallel build && npm run after-build",
+    "serve": "serve ./dist",
+    "after-build": "node ./scripts/afterBuild.js",
+    "create": "node ./scripts/create/index.js"
+  },
+  "devDependencies": {
+    "@umijs/utils": "^3.5.23",
+    "ip": "^1.1.5",
+    "kill-port": "^1.6.1",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "yargs": "^17.5.0"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "serve": "^13.0.2"
+  }
+}

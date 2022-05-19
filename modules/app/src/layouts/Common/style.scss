@@ -1,0 +1,55 @@
+.common-layout-wrapper {
+  height: 100vh;
+  width: 100vw;
+
+  .trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .trigger:hover {
+    color: #1890ff;
+  }
+
+  .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .ant-layout {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .ant-layout-content {
+    overflow: auto;
+  }
+
+  .common-layout-header {
+    border-bottom: solid 1px #f2f2f2;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .common-layout-header,
+  .common-layout-content {
+    background: #fff;
+  }
+
+  .common-layout-content {
+    padding: 24px;
+    min-height: 100%;
+  }
+
+  .common-layout-header-content-right {
+    padding: 0 24px;
+  }
+}

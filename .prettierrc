@@ -1,0 +1,16 @@
+{
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": ["*.json", ".babelrc", ".prettierrc"],
+      "options": {
+        "parser": "json",
+        "tabWidth": 2
+      }
+    }
+  ]
+}
