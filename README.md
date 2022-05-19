@@ -3,9 +3,10 @@
 ## 启动方式
 
 ```bash
-pnpm run init # 安装主项目结构依赖
+pnpm run init # 初始化，安装依赖
 pnpm run dev # 启动 dev 命令，默认基座在 8080 端口
-pnpm run build # 构建 mono 项目
+pnpm run build # 构建
+pnpm run serve # 产物预览
 ```
 
 ## 给特定子项目安装依赖
