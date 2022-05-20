@@ -1,8 +1,12 @@
 # 微前端常态化项目样例
 
-[StackBlitz](http://stackblitz.com/) 在线预览（StackBlitz 对 pnpm 支持不太好所以换用 lerna 来支持 workspace 功能）
+![](https://visitor-badge.glitch.me/badge?page_id=cjy0208.mono-micro-project)
+
+### 在线预览
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)]([https://stackblitz.com/github/nrwl/stackblitz-nx-angular?preset=node](https://stackblitz.com/edit/mono-micro-project))
+
+[StackBlitz](http://stackblitz.com/) 对 pnpm 支持不太好所以换用 lerna 来支持 workspace 功能
 
 ## 启动方式
 
