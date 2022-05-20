@@ -4,7 +4,7 @@
 
 ### 在线预览
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)]([https://stackblitz.com/github/nrwl/stackblitz-nx-angular?preset=node](https://stackblitz.com/edit/mono-micro-project))
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/mono-micro-project)
 
 [StackBlitz](http://stackblitz.com/) 对 pnpm 支持不太好所以换用 lerna 来支持 workspace 功能
 
