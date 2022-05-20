@@ -19,13 +19,14 @@ pnpm add xxx --filter @modules/xxx-1 --filter @modules/xxx-2
 ## 创建子项目
 
 ```bash
-npm run create:module -- --name=<模块名> --template=<模板名>
+npm run create -- --name=<模块名> --template=<模板名>
 ```
 
 目前可用模板有：
 
 1. `micro-react-vite` **(默认)**: 基于 vite 的 react（17） 子项目
 2. `micro-vue-vite`：基于 vite 的 vue3 子项目
+3. 待增加
 
 ### 踩坑记录
 

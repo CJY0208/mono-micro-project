@@ -5,13 +5,13 @@
   },
   "private": true,
   "scripts": {
-    "init": "npx pnpm i --filter=!./legacies && npx pnpm run --filter=./legacies --parallel init",
+    "init": "npx pnpm@6 i --filter=!./legacies && npx pnpm@6 run --filter=./legacies --parallel init",
     "clean": "rimraf ./**/node_modules",
     "kill-dev": "kill-port --port 8080,8081,8082,8083,8084",
-    "dev": "npm run kill-dev && npx pnpm run --filter=!root --parallel dev",
-    "dev:no-legacy": "npx pnpm run --filter=!root --filter=!@legacies/* --parallel dev",
-    "patch": "npx pnpm run --filter=!root --parallel patch",
-    "build": "npx pnpm run --filter=!root --parallel build && npm run after-build",
+    "dev": "npm run kill-dev && npx pnpm@6 run --filter=!root --parallel dev",
+    "dev:no-legacy": "npx pnpm@6 run --filter=!root --filter=!@legacies/* --parallel dev",
+    "patch": "npx pnpm@6 run --filter=!root --parallel patch",
+    "build": "npx pnpm@6 run --filter=!root --parallel build && npm run after-build",
     "serve": "serve ./dist",
     "after-build": "node ./scripts/afterBuild.js",
     "create": "node ./scripts/create/index.js"
