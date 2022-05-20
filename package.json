@@ -5,7 +5,7 @@
   },
   "private": true,
   "scripts": {
-    "init": "npx pnpm@6 i --filter=!./legacies && npx pnpm@6 run --filter=./legacies --parallel init",
+    "init": "npx pnpm@6 i --ignore-scripts --filter=!./legacies && npx pnpm@6 run --filter=./legacies --parallel init",
     "clean": "rimraf ./**/node_modules",
     "kill-dev": "kill-port --port 8080,8081,8082,8083,8084",
     "dev": "npm run kill-dev && npx pnpm@6 run --filter=!root --parallel dev",
@@ -27,5 +27,9 @@
   "dependencies": {
     "fs-extra": "^10.1.0",
     "serve": "^13.0.2"
+  },
+  "stackblitz": {
+    "installDependencies": false,
+    "startCommand": "npm run init && npm run dev"
   }
 }
