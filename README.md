@@ -1,4 +1,4 @@
-# 微前端常态化项目样例
+# 微前端 monorepo 项目样例
 
 ![](https://visitor-badge.glitch.me/badge?page_id=cjy0208.mono-micro-project)
 
