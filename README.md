@@ -5,6 +5,7 @@
 ### 在线预览
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/edit/mono-micro-project)
+[![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/edit/mono-micro-project)
 
 [StackBlitz](http://stackblitz.com/) 对 pnpm 支持不太好所以换用 lerna 来支持 workspace 功能
 
